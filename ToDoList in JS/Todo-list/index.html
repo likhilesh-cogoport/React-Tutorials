@@ -9,22 +9,6 @@
     <script src="myScript.js"></script>
 </head>
 <body>
-    <!-- <div class="primary-div">
-        <h1>TODO LIST</h1>
-        <div>
-            <input id="primary-input" type="text">
-            <button class="add-btn btn" onclick="getValue()">Add</button> 
-            <br><br>
-            Search: <input id="search-box" type="text" onkeyup="search()"
-            >
-            <br><br>
-        </div>
-        <div id="task-list">
-            
-        </div>
-        
-        <div id="search-list"></div>
-    </div> -->
     <div class="top-bar">
         <h1>TODO LIST</h1>
     </div>
@@ -48,30 +32,17 @@
                 <button class="nav-button btn active" onclick="setState('display-all')">All</button>
                 <button class="nav-button btn inactive" onclick="setState('display-incomplete')">Incomplete</button>
                 <button class="nav-button btn inactive" onclick="setState('display-done')">Done</button>
-                <!-- <button class="nav-button btn inactive" onclick="setState('display-search')">Search</button> -->
             </div>
             <div id="display-incomplete-btns">
                 <button class="nav-button btn inactive" onclick="setState('display-all')">All</button>
                 <button class="nav-button btn active" onclick="setState('display-incomplete')">Incomplete</button>
                 <button class="nav-button btn inactive" onclick="setState('display-done')">Done</button>
-                <!-- <button class="nav-button btn inactive" onclick="setState('display-search')">Search</button> -->
             </div>
             <div id="display-done-btns">
                 <button class="nav-button btn inactive" onclick="setState('display-all')">All</button>
                 <button class="nav-button btn inactive" onclick="setState('display-incomplete')">Incomplete</button>
                 <button class="nav-button btn active" onclick="setState('display-done')">Done</button>
-                <!-- <button class="nav-button btn inactive" onclick="setState('display-search')">Search</button> -->
             </div>
-            <!-- <div id="display-search-btns">
-                <button class="nav-button btn inactive" onclick="setState('display-all')">All</button>
-                <button class="nav-button btn inactive" onclick="setState('display-incomplete')">Incomplete</button>
-                <button class="nav-button btn inactive" onclick="setState('display-done')">Done</button>
-                <button class="nav-button btn active" onclick="setState('display-search')">Search</button>
-            </div> -->
-            <!-- <button class="nav-button btn inactive" onclick="setState('display-all')">All</button>
-            <button class="nav-button btn active" onclick="setState('display-incomplete')">Incomplete</button>
-            <button class="nav-button btn inactive" onclick="setState('display-done')">Done</button>
-            <button class="nav-button btn inactive" onclick="setState('display-search')">Search</button> -->
         </div>
     </div>
     <div class='display-container'>
@@ -84,9 +55,7 @@
         <div id="display-done">
             <div id="task-list-done"></div>
         </div>
-        <!-- <div id="display-search"></div> -->
     </div>
     
 </body>
 </html>
-<!-- onkeyup="search()" onkeypress="search()" -->
