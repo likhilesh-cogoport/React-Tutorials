@@ -1,0 +1,39 @@
+.univ{
+    width:100%;
+    height:100%;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: rgba(153, 205, 50, 0.565);
+}
+.main{
+    padding-top: 40px;
+    width:80%;
+    margin:0 auto;
+    background-color: antiquewhite;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.part1{
+    min-width:300px;
+    /* background-color: aqua; */
+    /* margin-right: 40px; */
+}
+.part2{
+    /* background-color: cadetblue; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.title1{
+    width:100%;
+    text-align: center;
+    font-size: 22px;
+    margin:20px 0px;
+}
+.genC1{
+    padding:10px 10px;
+}
+
+.genC2{
+    padding:10px 10px;
+}

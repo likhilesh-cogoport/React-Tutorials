@@ -1,0 +1,21 @@
+.navbar{
+    width: calc(100%-40px);
+    background-color: aliceblue;
+    /* margin:0 20px; */
+    padding:20px 50px;
+    text-align: center;
+}
+.btn{
+    font-size: 16px;
+    padding:6px 14px;
+    background-color:rgba(127, 255, 212, 0.053);
+    border-radius: 12px;
+    margin:5px 10px;
+    text-decoration: none;
+    border: 1px solid rgba(127, 255, 212, 0.289);
+}
+
+.btn:hover{
+    background-color: rgba(127, 255, 212, 0.348);
+    border: 1px solid rgba(127, 255, 212, 0.507);
+}
