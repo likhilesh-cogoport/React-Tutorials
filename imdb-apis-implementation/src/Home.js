@@ -6,6 +6,7 @@ import MovieCard from './components/MovieCard/MovieCard';
 import styles from './styles.module.css'
 import { Link } from 'react-router-dom';
 import Titlebar from './components/Titlebar';
+import Navbar from './components/Navbar';
 
 function Home(){
   const [movies, setMovies] = useState([]);
@@ -177,6 +178,7 @@ function Home(){
         <p className={styles.navbarTitle}> IMDB Movies </p>
       </div> */}
       <Titlebar/>
+      <Navbar liked={true} home={false}/>
       <div className={styles.searchBoxContainer}>
         <input type="text" placeholder='Search By Name' value={searchText} onChange={(e)=>{setSearchText(e.target.value)}}/>
         <input type="number" placeholder='Search By Year' value={searchYear} onChange={(e)=>{setSearchYear(e.target.value)}}/>
@@ -204,10 +206,12 @@ function Home(){
         </div>
         {
           pagination&&
-          <div>
-            <button onClick={previousPage} disabled={currentPage<=1}>{"<<"}</button>
-            {currentPage}
-            <button onClick={nextPage} disabled={currentPage>=totalPages}>{">>"}</button>
+          <div className={styles.paginationBar}>
+            <div className={styles.paginationContainer}>
+              <button onClick={previousPage} disabled={currentPage<=1}>{"<<"}</button>
+              {currentPage}
+              <button onClick={nextPage} disabled={currentPage>=totalPages}>{">>"}</button>
+            </div>
           </div>
         }
 

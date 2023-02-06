@@ -11,7 +11,7 @@ export default function MovieCard(props) {
         </div>
         <div className={styles.bottomBar}>
             <div className={styles.year}>
-                {(props.data.Type).toUpperCase()}{'('}{props.data.Year}{')'}
+                {(props.data.Type).toUpperCase()}{'  ('}{props.data.Year}{')'}
             </div>
             <div className={styles.likeBtn}>
                 <LikeButton flag={props.data.like} addLike={props.addLike}/>
